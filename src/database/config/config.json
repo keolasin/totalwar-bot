@@ -1,0 +1,31 @@
+{
+  "development": {
+    "username": "postgres",
+    "use_env_variable": "DATABASE_PW",
+    "password": "DATABASE_PW",
+    "database": "totalwar-bot",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": true,
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "postgres",
+    "use_env_variable": "DATABASE_PW",
+    "password": "DATABASE_PW",
+    "database": "totalwar-bot",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "logging": false,
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "use_env_variable": "DATABASE_URL",
+    "operatorsAliases": false
+  }
+}
