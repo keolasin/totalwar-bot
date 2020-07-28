@@ -1,0 +1,15 @@
+{
+  "name": "totalwar-bot",
+  "version": "1.0.0",
+  "description": "A bot for tracking totalwar victories, losses, and reloads for accountability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "totalwar",
+    "discord"
+  ],
+  "author": "Matthew Reyes <mreyes.info>",
+  "license": "ISC"
+}
