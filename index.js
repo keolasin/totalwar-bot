@@ -1,6 +1,22 @@
 require('dotenv').config();
 const fs = require('fs');
 
+const { Sequelize } = require('sequelize');
+const sequelize = new Sequelize(
+	process.env.DATABASE_URL, 
+	process.env.DATABASE_USERNAME,
+	process.env.DATABASE_PW, 
+	{
+		dialect: 'postgres',
+	}
+);
+
+sequelize.authenticate().then(() => {
+	console.log("Database connected successfully.");
+}).catch((err) => {
+	console.log(err);
+});
+
 const { Client, Collection } = require('discord.js');
 const client = new Client();
 client.commands = new Collection();
