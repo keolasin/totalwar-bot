@@ -11,5 +11,8 @@
     "discord"
   ],
   "author": "Matthew Reyes <mreyes.info>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
