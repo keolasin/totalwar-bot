@@ -51,7 +51,7 @@ module.exports.run = async ( client, message, args ) => {
             message.channel.send(`Welcome ${message.author.username}! You've reloaded because ${reason}, total is now ${reloadCount+1}!`);
             return;
         });
-    });    
+    });
 }
 
 module.exports.help = {

@@ -67,6 +67,7 @@ client.on('message', message => {
     if ( command ) {
         console.log(`Running command: ${command}`)
         runCommand.run(client, message, arguments);
+		console.log(`Command finished: ${command}`);
     }
 });
 
