@@ -13,7 +13,7 @@ module.exports.run = async ( client, message, args ) => {
             for ( item in loaded.players[player].reloads ) {
                 allReasons.push(loaded.players[player].reloads[item]);
             }
-            message.channel.send(`Reasons ${loaded.players[player].name} reloaded: ${allReasons.join(", ")}`);
+            message.channel.send(`Total: ${allReasons.length} Reasons ${loaded.players[player].name} reloaded: ${allReasons.join(", ")}`);
         }
     });
 }
