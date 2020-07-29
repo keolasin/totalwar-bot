@@ -4,6 +4,9 @@ module.exports.run = async ( client, message, args ) => {
     
     fs.readFile("./records.json", 'utf8', (err, data) => {
         let loaded = JSON.parse(data);
+        if (loaded.players === undefined){
+            message.channel.send(`No logs to report!`);
+        }
         for ( player in loaded.players ) {
             console.log(player);
             let allReasons = [];
